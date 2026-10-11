@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia;
+    background-color: #ede1ff;
+}
+
+/* NAV */
+nav {
+    background-color: #2e0b5a;
+    padding: 15px 30px;
+    height: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+nav h4 {
+    color: #ede1ff;
+    padding-top: 5px;
+    margin-left: auto;
+}
+
+nav a {
+    color: #ede1ff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 20px;
+    border-radius: 12px;
+}
+
+nav a:hover {
+    background-color: #ede1ff;
+    color: #2e0b5a;
+}
+
+nav audio {
+    padding: 2px 22px 20px 22px;
+}
+
+/* ANA SAYFA */
+.anasayfa {
+    text-align: center;
+    padding: 20px;
+}
+
+.anasayfa h1 {
+    font-size: 36px;
+    color: #2e0b5a;
+    margin-bottom: 10px;
+}
+
+.anasayfa p {
+    color: #6d6777;
+    margin-bottom: 20px;
+}
+
+.anasayfa a {
+    color: #a10275;
+    text-decoration: none;
+}
+
+/* ARAMA */
+.anasayfa form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.anasayfa input[type="text"] {
+    padding: 10px 15px;
+    border: 2px solid #8d6eb5;
+    border-radius: 12px;
+    font-size: 15px;
+    width: 300px;
+    outline: none;
+}
+
+.anasayfa form button[type="submit"] {
+    width: auto;
+    margin-top: 0;
+    padding: 10px 20px;
+    background-color: #784dac;
+    color: #ede1ff;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.anasayfa form button[type="submit"]:hover {
+    background-color: #c2acdd;
+    color: #2e0b5a;
+}
+
+/* LAYOUT */
+.ust-alan {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 20px;
+}
+
+.sol-resim, .sag-resim {
+    width: 200px;
+    max-height: 400px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.iki-sutun {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+    min-width: 0;
+    justify-content: center;
+}
+
+.sutun {
+    flex: 1;
+    min-width: 0;
+    max-width: 25%;
+}
+
+.sutun p {
+    color: #6d6777;
+}
+
+.sutun h2 {
+    color: #2e0b5a;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #8d6eb5;
+    text-align: center;
+}
+
+/* KARTLAR */
+.kart {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.kart:hover {
+    transform: translateY(-3px);
+}
+
+.kart h3 {
+    color: #2e0b5a;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.kart h5 {
+    color: #9457bc;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.kart p {
+    color: #5d5467;
+    font-size: 14px;
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+.kart img {
+    border-radius: 8px;
+    margin: 0 auto 8px auto;
+    display: block;
+}
+
+.kart-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.kart a[href*="sil"] {
+    color: #930469;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.kart a[href*="duzenle"] {
+    color: #930469;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.kart-butonlar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.kart form button,
+.kart form button[type="submit"] {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 0;
+    color: inherit;
+}
+
+/* EKLE & DÜZENLE SAYFASI */
+.ekle-sayfa {
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ekle-sayfa h1 {
+    color: #2e0b5a;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5d5467;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #8d6eb5;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    background-color: #f9f5ff;
+    font-family: Georgia;
+    color: #1e083a;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #784dac;
+    color: #ede1ff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #c2acdd;
+    color: #2e0b5a;
+}
+
+/* DETAY SAYFASI */
+.detay-sayfa {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.detay-sayfa h1 {
+    color: #2e0b5a;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.detay-sayfa h5 {
+    color: #9457bc;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.detay-sayfa h6 {
+    color: #a66a9a;
+}
+
+
+.detay-sayfa p {
+    color: #59476c;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.detay-sayfa img {
+    border-radius: 10px;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+
+.detay-sayfa a {
+    color: #2e0b5a;
+    text-decoration: none;
+}
+
+.detay-sayfa a:hover {
+    color: #a10275;
+}
+
+.detay-altbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.detay-icerik {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.detay-bilgi {
+    flex: 1;
+}
+.fragman-buton {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #dcd1e6;
+    color: #2e0b5a !important;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.fragman-buton:hover {
+    background-color: #b7aacf;
+    color: #2e0b5a !important;
+}
+
+.fragman-buton:visited {
+    background-color: #e8b9da;
+    color: #2e0b5a !important;
+}
+.fragman-buton:visited:hover {
+    background-color: #c382ac;
+    color: #2e0b5a !important;
+}
+
